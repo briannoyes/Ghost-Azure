@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="main-menu navbar navbar-expand-lg">
+                <a class="navbar-brand" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.url}}"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainMenu">
+                    <ul class="navbar-nav ml-auto">
+                      {{#foreach navigation}}
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{url}}">{{label}}<span class="sr-only">(current)</span></a>
+                        </li>
+                       {{/foreach}}
+
+                       <!-- For Dropdown Menu Remove It If You Don't Want Dropdown Menu -->
+
+<!--                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Posts</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Link One </a>
+                                <a class="dropdown-item" href="#">Link Two </a>
+                                <a class="dropdown-item" href="#">Link Three </a>
+                            </div>
+                        </li>
+                        <li><a href="#">Static</a></li>
+                        <li><a href="#">Traffic</a></li>
+                        <li><a href="#">Business</a></li> -->
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>

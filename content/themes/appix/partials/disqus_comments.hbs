@@ -1,0 +1,24 @@
+
+<script>
+
+var disqus_config = function () {
+    this.page.url = "{{url absolute="true"}}";
+    this.page.identifier = "blog-{{comment_id}}";
+};
+
+(function() { 
+
+var d = document, s = d.createElement('script');
+
+s.src = 'https://themeix.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+
+(d.head || d.body).appendChild(s);
+
+})();
+
+</script>
+<script id="dsq-count-scr" src="//themeix.disqus.com/count.js" async></script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
