@@ -5,36 +5,37 @@
          <div class="col-md-6 col-lg-3">
             <div class="column">
                <div class="widget-title">
-                  <h3>About Us</h3>
+                  <h3>About Brian</h3>
                </div>
-                 <p>Vestibulum quis cursus mi, vitae mollis metus. Nulam eu lects gravida, bibendum enim in, vulputate erat. Vestibulum ullamcorper ornare magna</p>
+               <p>Brian is CTO at Solliance, a Microsoft Regional Director and MVP, and Pluralsight Author.
+                  </p>
                <div class="themeix-social-area">
-                  <a class="themeix-tool" href="#">
+                  <a class="themeix-tool" href="https://twitter.com/briannoyes">
                      <i class="fa fa-twitter"></i>
                      <div id="colorbox" class="themeix-color twitter-color"></div>
                   </a>
-                  <a class="themeix-tool" href="#">
+                  <a class="themeix-tool" href="https://facebook.com/briandnoyes">
                      <i class="fa fa-facebook"></i>
                      <div id="colorboxs" class="themeix-color facebook-color"></div>
                   </a>
-                  <a class="themeix-tool" href="#">
+                  <a class="themeix-tool" href="https://plus.google.com/u/0/+BrianNoyes">
                      <i class="fa fa-google-plus"></i>
                      <div id="colorboxss" class="themeix-color google-color"></div>
                   </a>
                </div>
             </div>
          </div>
-         <div class="col-md-6 col-lg-3">
-           <div class="column">
-              <div class="widget-title">
+         <div class="col-md-6 col-lg-6">
+            <div class="column">
+               <div class="widget-title">
                   <h3>Most Popular Tags</h3>
-              </div>
-              <div class="tag-clouds">
-                {{> tag_clouds}}
-              </div>
-           </div>
+               </div>
+               <div class="tag-clouds">
+                  {{> tag_clouds}}
+               </div>
+            </div>
          </div>
-         <div class="col-md-6 col-lg-3">
+         <!--<div class="col-md-6 col-lg-3">
             <div class="column">
                <div class="widget-title">
                   <h3>Get Support</h3>
@@ -50,27 +51,27 @@
                   </ul>
                </div>
             </div>
-         </div>
+         </div>-->
          <div class="col-md-6 col-lg-3">
             <div class="column">
-             <div class="widget-content">
-            {{!-- Email subscribe form at the bottom of the page --}}
-             {{#if @labs.subscribers}}
-               <section class="gh-subscribe">
-                  <div class="widget-title">
-                     <h3>{{t "Subscribe"}}</h3>
-                     <p>{{t "Subscribe to {blogtitle}" blogtitle=@blog.title}}</p>
-                  </div>
-                 <form action="{{site.url}}/subscribe">
-                   <div class="input-group">
-                     <input type="text" class="form-control subscribe-input" placeholder="subscribe">
-                     <span class="input-group-btn">
-                        <button class="btn btn-secondary subscribe-text" type="button">{{t "Subscribe"}}</button>
-                     </span>
-                   </div>
-                 </form>
-                 </section>
-                {{/if}}
+               <div class="widget-content">
+                  {{!-- Email subscribe form at the bottom of the page --}}
+                  {{#if @labs.subscribers}}
+                  <section class="gh-subscribe">
+                     <div class="widget-title">
+                        <h3>{{t "Subscribe"}}</h3>
+                        <p>{{t "Subscribe to {blogtitle}" blogtitle=@blog.title}}</p>
+                     </div>
+                     <form action="{{site.url}}/subscribe">
+                        <div class="input-group">
+                           <input type="text" class="form-control subscribe-input" placeholder="subscribe">
+                           <span class="input-group-btn">
+                              <button class="btn btn-secondary subscribe-text" type="button">{{t "Subscribe"}}</button>
+                           </span>
+                        </div>
+                     </form>
+                  </section>
+                  {{/if}}
                </div>
             </div>
          </div>
@@ -80,23 +81,23 @@
 <div class="footer-overlay blog-footer">
    <div class="blog-footer-overlya">
       <div class="container">
-        <div class="row">
-         <div class="col-md-12">
-            <div class="themeix-footer-bottom">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="themeix-footer-bottom">
                   <div class="inner-section">
-      							<!-- start logo -->
-      							{{#if @blog.logo}}
-      							<a class="logo image-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}"></a>
-      							{{else}}
-      							<a class="logo text-logo" href="{{@blog.url}}"><img src="{{asset "images/logo-white.png"}}" alt="Author image" class="logo-image">		</a>
-      							{{/if}}
-      							<!-- end logo -->
+                     <!-- start logo -->
+                     {{#if @blog.logo}}
+                     <a class="logo image-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}"></a>
+                     {{else}}
+                     <a class="logo text-logo" href="{{@blog.url}}"><img src="{{asset "images/topgun.png"}}" alt="Author image"
+                           class="logo-image"> </a>
+                     {{/if}}
+                     <!-- end logo -->
                      <ul class="footer-menu">
-                        <li><a href="/privacy-policy">Privacy Policy</a></li>
-                        <li><a href="/about">About Us</a></li>
-                        <li><a href="/disclaimer">Disclaimer</a></li>
+                        <!--<li><a href="/privacy-policy">Privacy Policy</a></li>-->
+                        <li><a href="/about">About Brian</a></li>
+                        <!--<li><a href="/disclaimer">Disclaimer</a></li>-->
                      </ul>
-                     <h5>All content Appix <i class="fa fa-copyright"></i> {{date format="Y"}} - All rights reserved - Proudly made with <a href="http://themeix.com/">Themeix</a></h5>
                   </div>
                </div>
             </div>
