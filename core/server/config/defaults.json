@@ -2,7 +2,7 @@
     "url": "http://briannoyes.com",
     "server": {
         "host": "http://briannoyes.com",
-        "port": 2368
+        "port": 80
     },
     "updateCheck": {
         "url": "https://updates.ghost.org",
