@@ -1,5 +1,6 @@
 # Ghost DB
-./content/data/ghost.db
+ghost.db
+
 # Logs
 logs
 *.log
